@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://a-volkan.github.io/Portfolio-p12",
+  "homepage": "https://a-volkan.github.io/Portfolio-p12/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^14.0.0",

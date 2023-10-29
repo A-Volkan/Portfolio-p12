@@ -3,14 +3,14 @@ import App from './App'
 import "normalize.css"
 import { createRoot } from 'react-dom/client';
 
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter } from 'react-router-dom'
 
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<BrowserRouter basename='/Portfolio-p12'>
+root.render(<HashRouter hashtype="slash" >
     <App />
-</BrowserRouter>);
+</HashRouter>);
 
 
 
