@@ -2,20 +2,14 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { mediaQueries, lightTheme } from './Themes'
 import { Design, Develope } from '../SideComponents/Svgs';
-// import LogoComponent from '../SideComponents/LogoComponent';
-// import SocialIcons from '../SideComponents/SocialIcons';
-// import PowerButton from '../SideComponents/PowerButton';
-// import ParticleComponent from '../SideComponents/ParticleComponent.js'
-// import BigTittle from '../SideComponents/BigTittle';
+
 import LoadingPage from "../SideComponents/LoadingPage";
 import { lazy, Suspense } from "react";
 
 const SocialIcons = lazy(() => import('../SideComponents/SocialIcons'));
 const PowerButton = lazy(() => import('../SideComponents/PowerButton'));
 const LogoComponent = lazy(() => import("../SideComponents/LogoComponent"));
-const ParticleComponent = lazy(() =>
-    import('../SideComponents/ParticleComponent.js')
-);
+const ParticleComponent = lazy(() => import('../SideComponents/ParticleComponent.js'));
 const BigTittle = lazy(() => import('../SideComponents/BigTittle'));
 
 

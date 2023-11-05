@@ -58,7 +58,7 @@ const SocialIcons = (props) => {
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
-                transition={{ type: "spring", duration: 1, delay: 1.6 }}
+                transition={{ type: "spring", duration: 1, delay: 1.2 }}
             >
                 <a
                     style={{ color: "inherit" }}
@@ -76,7 +76,7 @@ const SocialIcons = (props) => {
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
-                transition={{ type: "spring", duration: 1, delay: 1.2 }}
+                transition={{ type: "spring", duration: 1, delay: 1.4 }}
             >
                 <a
                     style={{ color: "inherit" }}
@@ -93,7 +93,7 @@ const SocialIcons = (props) => {
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
-                transition={{ type: "spring", duration: 1, delay: 1.4 }}
+                transition={{ type: "spring", duration: 1, delay: 1.6 }}
             >
                 <a
                     style={{ color: "inherit" }}

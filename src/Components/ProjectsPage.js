@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import img from '../assets/Images/project.jpeg'
-import LogoComponent from '../SideComponents/LogoComponent'
-import PowerButton from '../SideComponents/PowerButton'
-import SocialIcons from '../SideComponents/SocialIcons'
 
 import { Projects } from '../data/ProjectData';
 import ProjectsComponent from './ProjectsComponent'
 import { motion } from 'framer-motion'
-import CrochetComponent from '../SideComponents/CrochetComponent'
-import BigTittle from '../SideComponents/BigTittle'
+
 import { mediaQueries } from "./Themes";
+import LoadingPage from "../SideComponents/LoadingPage";
+
+const BigTittle = lazy(() => import('../SideComponents/BigTittle'));
+const SocialIcons = lazy(() => import('../SideComponents/SocialIcons'));
+const PowerButton = lazy(() => import('../SideComponents/PowerButton'));
+const LogoComponent = lazy(() => import('../SideComponents/LogoComponent'));
+const CrochetComponent = lazy(() => import('../SideComponents/CrochetComponent'));
 
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
 background-image:url(${img});
 background-size:cover;
 background-repeat: no-repeat;
@@ -78,30 +81,32 @@ const ProjectsPage = () => {
     }, [])
 
     return (
-        <MainContainer variants={container}
-            initial='hidden'
-            animate='show'
-            exit={{
-                opacity: 0, transition: { duration: 0.5 }
-            }}>
-            <Container>
-                <LogoComponent />
-                <PowerButton />
-                <SocialIcons />
-                <CrochetComponent numbers={numbers} />
-                <Center>
-                    <Grid>
-                        {
-                            Projects.map(project => {
-                                return <ProjectsComponent key={project.id} project={project} />
-                            })
-                        }
-                    </Grid>
+        <Suspense fallback={<LoadingPage />}>
+            <MainContainer variants={container}
+                initial='hidden'
+                animate='show'
+                exit={{
+                    opacity: 0, transition: { duration: 0.5 }
+                }}>
+                <Container>
+                    <LogoComponent />
+                    <PowerButton />
+                    <SocialIcons />
+                    <CrochetComponent numbers={numbers} />
+                    <Center>
+                        <Grid>
+                            {
+                                Projects.map(project => {
+                                    return <ProjectsComponent key={project.id} project={project} />
+                                })
+                            }
+                        </Grid>
 
-                </Center>
-                <BigTittle text="PROJECTS" top="-1rem" left="5rem" />
-            </Container>
-        </MainContainer>
+                    </Center>
+                    <BigTittle text="PROJECTS" top="-1rem" left="5rem" />
+                </Container>
+            </MainContainer>
+        </Suspense>
     )
 }
 

@@ -170,35 +170,35 @@ ${mediaQueries(320)`
 
 const Intro = () => {
 
-    const [height, setHeight] = useState("55vh");
+  const [height, setHeight] = useState("55vh");
 
-    useEffect(() => {
-        if (window.matchMedia("(max-width: 800px)").matches) {
-            setHeight("70vh");
-        }
-        if (window.matchMedia("(max-width: 320px)").matches) {
-            setHeight("60vh");
-        }
-    }, []);
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      setHeight("70vh");
+    }
+    if (window.matchMedia("(max-width: 320px)").matches) {
+      setHeight("60vh");
+    }
+  }, []);
 
-    return (
-        <Box initial={{ height: 0 }}
-            animate={{ height: height }}
-            transition={{ type: "spring", duration: 2, delay: 1 }} >
-            <SubBox>
-                <Text>
-                    <h1>Hello,</h1>
-                    <h3>I'm Volkan</h3>
-                    <h6>Im a Frontend web developer and a music producer</h6>
-                </Text>
-            </SubBox>
-            <SubBox>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2 }}>
-                    <img className='img' src={Astro} alt='Profile'></img>
-                </motion.div>
-            </SubBox>
-        </Box>
-    )
+  return (
+    <Box initial={{ height: 0 }}
+      animate={{ height: height }}
+      transition={{ type: "spring", duration: 2, delay: 1 }} >
+      <SubBox>
+        <Text>
+          <h1>Hello,</h1>
+          <h3>I'm Volkan</h3>
+          <h6>Im a Frontend web developer and a music producer</h6>
+        </Text>
+      </SubBox>
+      <SubBox>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2 }}>
+          <img className='img' src={Astro} alt='Profile'></img>
+        </motion.div>
+      </SubBox>
+    </Box>
+  )
 }
 
 export default Intro;

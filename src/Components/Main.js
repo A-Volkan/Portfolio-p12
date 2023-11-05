@@ -185,9 +185,9 @@ const Main = () => {
 
     // pour que la loading page dure plus longtemps seulement sur la page principal
     useEffect(() => {
-        const loadingTimeout = setTimeout(() => {
+        setTimeout(() => {
             setShowLoading(false);
-        }, 1000);
+        }, 800);
 
 
     }, []);

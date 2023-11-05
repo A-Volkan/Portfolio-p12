@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
+import { motion } from 'framer-motion'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { DarkTheme, mediaQueries } from './Themes';
-import LogoComponent from '../SideComponents/LogoComponent';
-import SocialIcons from '../SideComponents/SocialIcons';
-import PowerButton from '../SideComponents/PowerButton';
-import ParticleComponent from '../SideComponents/ParticleComponent';
-
 import astronaut from '../assets/Images/astro3.png'
-import BigTittle from '../SideComponents/BigTittle';
+import LoadingPage from '../SideComponents/LoadingPage';
+
+
+const LogoComponent = lazy(() => import('../SideComponents/LogoComponent'));
+const SocialIcons = lazy(() => import('../SideComponents/SocialIcons'));
+const PowerButton = lazy(() => import('../SideComponents/PowerButton'));
+const ParticleComponent = lazy(() => import('../SideComponents/ParticleComponent'));
+const BigTittle = lazy(() => import('../SideComponents/BigTittle'));
+
+
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -84,33 +89,42 @@ ${mediaQueries(320)`
 const AboutPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
-            <Box>
+            <Suspense fallback={<LoadingPage />}>
+                <Box>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+                        exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+                        <LogoComponent theme='dark' />
+                        <SocialIcons theme='dark' />
+                        <PowerButton />
+                        <ParticleComponent theme='dark' />
 
-                <LogoComponent theme='dark' />
-                <SocialIcons theme='dark' />
-                <PowerButton />
-                <ParticleComponent theme='dark' />
+                        <Spaceman>
+                            <img src={astronaut} alt="spaceman" />
+                        </Spaceman>
+                        <Main>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1 } }}>
+                                I'm a Web Developer located in France, dedicated to crafting elegant and user-friendly websites.
+                                <br /> <br />
+                                I'm interested in the whole frontend stack, I enjoy exploring new technologies and embarking on exciting projects.
+                                Beyond coding, I wear the hats of a music producer and sound engineer, bringing creativity to both digital and auditory realms.
+                                <br></br>
+                                <br></br>
+                                My focal point is transforming clients' visions into reality, treating every project as a unique piece of art.
+                                <br /> <br />
+                                Let's connect and explore the boundless possibilities
+                                ———Find me through my social links.
+                            </motion.div>
+                        </Main>
 
-                <Spaceman>
-                    <img src={astronaut} alt="spaceman" />
-                </Spaceman>
-                <Main>
-                    I'm a Web Developer located in France, dedicated to crafting elegant and user-friendly websites.
-                    <br /> <br />
-                    I'm interested in the whole frontend stack, I enjoy exploring new technologies and embarking on exciting projects.
-                    Beyond coding, I wear the hats of a music producer and sound engineer, bringing creativity to both digital and auditory realms.
-                    <br></br>
-                    <br></br>
-                    My focal point is transforming clients' visions into reality, treating every project as a unique piece of art.
-                    <br /> <br />
-                    Let's connect and explore the boundless possibilities
-                    ———Find me through my social links.
-                </Main>
 
-
-                <BigTittle text="ABOUT ME" top="10%" left="5%" />
-            </Box>
-
+                        <BigTittle text="ABOUT ME" top="10%" left="5%" />
+                    </motion.div>
+                </Box>
+            </Suspense>
         </ThemeProvider>
 
     )

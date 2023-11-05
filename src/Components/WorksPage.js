@@ -1,16 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { Suspense, lazy, useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme, mediaQueries } from "./Themes";
 import { motion } from "framer-motion";
-
-import LogoComponent from "../SideComponents/LogoComponent";
-import SocialIcons from "../SideComponents/SocialIcons";
-import PowerButton from "../SideComponents/PowerButton";
-
 import { Work } from "../data/WorkData";
 import Card from "../SideComponents/Card";
 import { Energy } from "../SideComponents/Svgs";
-import BigTitlte from "../SideComponents/BigTittle";
+import LoadingPage from "../SideComponents/LoadingPage";
+
+
+const BigTitlte = lazy(() => import("../SideComponents/BigTittle"));
+const LogoComponent = lazy(() => import("../SideComponents/LogoComponent"));
+const SocialIcons = lazy(() => import("../SideComponents/SocialIcons"));
+const PowerButton = lazy(() => import("../SideComponents/PowerButton"));
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -121,12 +122,14 @@ const WorksPage = () => {
         <LogoComponent theme="dark" />
         <SocialIcons theme="dark" />
         <PowerButton />
+        <Suspense fallback={<LoadingPage />}>
 
-        <Main ref={ref} variants={container} initial="hidden" animate="show">
-          {Work.map((d) => (
-            <Card key={d.id} data={d} />
-          ))}
-        </Main>
+          <Main ref={ref} variants={container} initial="hidden" animate="show">
+            {Work.map((d) => (
+              <Card key={d.id} data={d} />
+            ))}
+          </Main>
+        </Suspense>
         <Rotate ref={energy}>
           <Energy width={80} height={80} fill={DarkTheme.text} />
         </Rotate>
