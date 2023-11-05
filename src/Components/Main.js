@@ -303,7 +303,7 @@ const Main = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                Work details
+                                Works details
                             </motion.h2>
                         </WORK>
 

@@ -168,12 +168,12 @@ const Skills = () => {
                             <Design width={40} height={40} /> FRONTEND
                         </Title>
                         <Description>
-                            I focus on helping your idea becoming Reality, i enjoy bringing new ideas to life.
+                            Bringing new ideas to life, crafting user-friendly websites
                         </Description>
                         <Description>
                             <strong>Skills</strong>
                             <p>
-                                Html, Css, JavaScript, React, Redux, Sass, Bootstrap.
+                                Html, Css, JavaScript, React, Redux, Sass, Bootstrap, Framer Motion.
                             </p>
                         </Description>
                         <Description>

@@ -95,18 +95,20 @@ const AboutPage = () => {
                     <img src={astronaut} alt="spaceman" />
                 </Spaceman>
                 <Main>
-                    I'm a Web Developer located in France. I love to create simple yet beautiful websites with great user experience.
+                    I'm a Web Developer located in France, dedicated to crafting elegant and user-friendly websites.
                     <br /> <br />
-                    I'm interested in the whole frontend stack Like trying new things and building great projects. I'm also an Music producer and sound engineer.
+                    I'm interested in the whole frontend stack, I enjoy exploring new technologies and embarking on exciting projects.
+                    Beyond coding, I wear the hats of a music producer and sound engineer, bringing creativity to both digital and auditory realms.
                     <br></br>
                     <br></br>
-                    Focus on Bringing a client's vision to life .
+                    My focal point is transforming clients' visions into reality, treating every project as a unique piece of art.
                     <br /> <br />
-                    I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+                    Let's connect and explore the boundless possibilities
+                    ———Find me through my social links.
                 </Main>
 
 
-                <BigTittle text="ABOUT" top="10%" left="5%" />
+                <BigTittle text="ABOUT ME" top="10%" left="5%" />
             </Box>
 
         </ThemeProvider>

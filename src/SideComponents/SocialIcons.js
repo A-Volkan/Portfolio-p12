@@ -45,7 +45,7 @@ const SocialIcons = (props) => {
                 <a
                     style={{ color: "inherit" }}
                     target="_blank"
-                    href={"https://github.com/"} rel="noreferrer"
+                    href={"https://github.com/A-Volkan"} rel="noreferrer"
                 >
                     <Github
                         width={25}
@@ -54,6 +54,25 @@ const SocialIcons = (props) => {
                     />
                 </a>
             </motion.div>
+
+            <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: "spring", duration: 1, delay: 1.6 }}
+            >
+                <a
+                    style={{ color: "inherit" }}
+                    target="_blank"
+                    href={"https://www.linkedin.com/in/volkan-a-5a0aa9297/"} rel="noreferrer"
+                >
+                    <Linkedin
+                        width={25}
+                        height={25}
+                        fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+                    />
+                </a>
+            </motion.div>
+
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
@@ -82,23 +101,6 @@ const SocialIcons = (props) => {
                     href={"https://Soundcloud.com/"} rel="noreferrer"
                 >
                     <Soundcloud
-                        width={25}
-                        height={25}
-                        fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
-                    />
-                </a>
-            </motion.div>
-            <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: [0, 1, 1.5, 1] }}
-                transition={{ type: "spring", duration: 1, delay: 1.6 }}
-            >
-                <a
-                    style={{ color: "inherit" }}
-                    target="_blank"
-                    href={"https://fr.linkedin.com/"} rel="noreferrer"
-                >
-                    <Linkedin
                         width={25}
                         height={25}
                         fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
