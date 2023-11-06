@@ -22,7 +22,7 @@ export const Work = [
         id: 3,
         name: "Sophie bluel, site portfolio d’une architecte d’intérieur.",
         description: "J'ai conçu une page web dynamique en utilisant JavaScript pour créer une présentation filtrable des travaux de l'architecte, avec une authentification sécurisée de l'administrateur via JSON Web Token, et une fonctionnalité permettant d'ajouter/supprimer des projets à l'aide d'une modale, en interagissant avec une API.",
-        tags: ["html", "css", "javascript"],
+        tags: ["html", "css", "javascript", "Api", "Swagger"],
 
         demo: "https://a-volkan.github.io/Projet-6-Portfolio-architecte/FrontEnd/",
         github: "https://github.com/A-Volkan/Projet-6-Portfolio-architecte"

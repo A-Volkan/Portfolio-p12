@@ -19,7 +19,7 @@ export const Projects = [
     {
         id: 3,
         name: "Sophie bluel, conception du site portfolio d’une architecte d’intérieur ",
-        tags: ["html", "css", "javascript"],
+        tags: ["html", "css", "javascript", "Api", "Swagger"],
         date: "OC-2023",
         imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697800647/sophiebluel1_zvkqdv.jpg",
         link: "https://a-volkan.github.io/Projet-6-Portfolio-architecte/FrontEnd/"
@@ -45,10 +45,10 @@ export const Projects = [
     {
         id: 6,
         name: "Argent Bank",
-        tags: ["Html,Css,React,Redux"],
+        tags: ["Html", "Css", "React", "Redux", "MongoDb", "Swagger"],
         date: "OC-2023",
         imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697802470/argentbank2_g16lk8.png",
-        link: "https://github.com/"
+        link: "https://github.com/A-Volkan/ArgentBank-website"
     },
 
 
