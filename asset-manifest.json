@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio-p12/static/css/main.58462fbc.css",
-    "main.js": "/Portfolio-p12/static/js/main.fc5bd46f.js",
+    "main.js": "/Portfolio-p12/static/js/main.603a4692.js",
     "static/js/546.07c1a81a.chunk.js": "/Portfolio-p12/static/js/546.07c1a81a.chunk.js",
     "static/js/403.3f507f35.chunk.js": "/Portfolio-p12/static/js/403.3f507f35.chunk.js",
-    "static/js/331.2e5b04a5.chunk.js": "/Portfolio-p12/static/js/331.2e5b04a5.chunk.js",
-    "static/js/844.d0ad33eb.chunk.js": "/Portfolio-p12/static/js/844.d0ad33eb.chunk.js",
+    "static/js/331.a21cfb37.chunk.js": "/Portfolio-p12/static/js/331.a21cfb37.chunk.js",
+    "static/js/844.0956cb7f.chunk.js": "/Portfolio-p12/static/js/844.0956cb7f.chunk.js",
     "static/js/377.f74eb5ad.chunk.js": "/Portfolio-p12/static/js/377.f74eb5ad.chunk.js",
     "static/js/727.59c8f07a.chunk.js": "/Portfolio-p12/static/js/727.59c8f07a.chunk.js",
     "static/js/254.7e44602c.chunk.js": "/Portfolio-p12/static/js/254.7e44602c.chunk.js",
@@ -29,11 +29,11 @@
     "static/media/stars.png": "/Portfolio-p12/static/media/stars.a979f6ed7ad00c7ea0b2.png",
     "index.html": "/Portfolio-p12/index.html",
     "main.58462fbc.css.map": "/Portfolio-p12/static/css/main.58462fbc.css.map",
-    "main.fc5bd46f.js.map": "/Portfolio-p12/static/js/main.fc5bd46f.js.map",
+    "main.603a4692.js.map": "/Portfolio-p12/static/js/main.603a4692.js.map",
     "546.07c1a81a.chunk.js.map": "/Portfolio-p12/static/js/546.07c1a81a.chunk.js.map",
     "403.3f507f35.chunk.js.map": "/Portfolio-p12/static/js/403.3f507f35.chunk.js.map",
-    "331.2e5b04a5.chunk.js.map": "/Portfolio-p12/static/js/331.2e5b04a5.chunk.js.map",
-    "844.d0ad33eb.chunk.js.map": "/Portfolio-p12/static/js/844.d0ad33eb.chunk.js.map",
+    "331.a21cfb37.chunk.js.map": "/Portfolio-p12/static/js/331.a21cfb37.chunk.js.map",
+    "844.0956cb7f.chunk.js.map": "/Portfolio-p12/static/js/844.0956cb7f.chunk.js.map",
     "377.f74eb5ad.chunk.js.map": "/Portfolio-p12/static/js/377.f74eb5ad.chunk.js.map",
     "727.59c8f07a.chunk.js.map": "/Portfolio-p12/static/js/727.59c8f07a.chunk.js.map",
     "254.7e44602c.chunk.js.map": "/Portfolio-p12/static/js/254.7e44602c.chunk.js.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.fc5bd46f.js"
+    "static/js/main.603a4692.js"
   ]
 }
