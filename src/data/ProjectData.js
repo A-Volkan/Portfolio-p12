@@ -35,7 +35,7 @@ export const Projects = [
 
     {
         id: 5,
-        name: "Nina Carducci",
+        name: "Nina Carducci, Optimisez le référencement d'un site de photographe",
         tags: ["Seo", "Performance", "Optimisation"],
         date: "OC-2023",
         imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697802127/ninacarducci_y0rc4i.jpg",
@@ -44,8 +44,8 @@ export const Projects = [
 
     {
         id: 6,
-        name: "Argent Bank",
-        tags: ["Html", "Css", "React", "Redux", "MongoDb", "Swagger"],
+        name: "Argent Bank, Implémentez le front-end d'une application bancaire avec React ",
+        tags: ["React", "Redux", "MongoDb", "Swagger"],
         date: "OC-2023",
         imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697802470/argentbank2_g16lk8.png",
         link: "https://github.com/A-Volkan/ArgentBank-website"

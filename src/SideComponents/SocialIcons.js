@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-// import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
 import { Github, Twitter, Linkedin, Soundcloud } from './Svgs'
 import { DarkTheme, mediaQueries } from "../Components/Themes";
@@ -20,9 +19,8 @@ const Icons = styled.div`
   & > *:not(:last-child) {
     margin: 0.5rem 0;
   }
-  ${mediaQueries(426)`
+  ${mediaQueries(430)`
       left:1rem;
-      
       
   `};
 `;

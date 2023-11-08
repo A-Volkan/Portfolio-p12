@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Github } from "../SideComponents/Svgs";
 import { mediaQueries } from "../Components/Themes";
@@ -9,12 +8,12 @@ import { mediaQueries } from "../Components/Themes";
 
 const Box = styled(motion.li)`
 width: 20rem;
-height: 45vh;
+height: 50vh;
 background-color: ${props => props.theme.text};
 color:${props => props.theme.body};
 padding: 1.5rem 2rem;
 margin-right: 8rem;
-border-radius: 0 50px 0 50px;
+border-radius: 0 75px 0 75px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -31,14 +30,14 @@ border: 1px solid ${props => props.theme.text};
 ${mediaQueries(800)`
 width:16rem;
 margin-right:6rem;
-height:35vh;
+height:40vh;
 
 
 `};
 ${mediaQueries(640)`
 width:14rem;
 margin-right:4rem;
-height:35vh;
+height:44vh;
 
 
 
@@ -46,7 +45,7 @@ height:35vh;
 ${mediaQueries(400)`
 width:12rem;
 margin-right:4rem;
-height:35vh;
+height:44vh;
 padding:1.5rem 1.5rem;
 
 
