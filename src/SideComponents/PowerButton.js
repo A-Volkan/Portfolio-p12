@@ -39,6 +39,7 @@ ${mediaQueries(640)`
    width: 2rem;
   height: 2rem;
       svg{
+        display: flex;
         width:20px;
         height:20px;
       }

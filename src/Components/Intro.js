@@ -189,7 +189,8 @@ const Intro = () => {
         <Text>
           <h1>Hello,</h1>
           <h3>I'm Volkan</h3>
-          <h6>Im a Frontend web developer and a music producer</h6>
+          <h5>Im a Frontend Web Developer and a Music producer</h5>
+          <h6>I’m thrilled to embark on this journey and can’t wait to see where it will lead me. I am eager to apply my creativity and technical skills to new challenges and opportunities. Let’s create some magic together !</h6>
         </Text>
       </SubBox>
       <SubBox>

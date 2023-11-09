@@ -13,7 +13,7 @@ export const Projects = [
         name: "Oh My Food, développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques",
         tags: ["html", "Sass", "Keyframe", "Git/Github"],
         date: "OC-2023",
-        imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697801114/ohmyfood_a9ecqd.png",
+        imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1699534132/zstzya57a0whgbxjqzmr.png",
         link: "https://a-volkan.github.io/Ocprojet4/"
     },
     {
@@ -38,7 +38,7 @@ export const Projects = [
         name: "Nina Carducci, Optimisez le référencement d'un site de photographe",
         tags: ["Seo", "Performance", "Optimisation"],
         date: "OC-2023",
-        imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1697802127/ninacarducci_y0rc4i.jpg",
+        imgSrc: "https://res.cloudinary.com/dg2iboujz/image/upload/v1699534730/ninacarducci_y0rc4i.jpg",
         link: "https://a-volkan.github.io/P9-ninacarducci/"
     },
 

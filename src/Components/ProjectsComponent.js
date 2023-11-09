@@ -6,7 +6,7 @@ import { mediaQueries } from "./Themes";
 
 const Box = styled.a`
 padding:1rem;
-width: calc(10rem + 15vw);
+width: calc(8rem + 15vw);
 height:20rem;
 text-decoration:none;
 color: ${(props) => props.theme.text};
@@ -50,6 +50,10 @@ height:60%;
 border:1px solid transparant;
 background-position:center center;
 ${mediaQueries(600)`
+    
+    height:40%;
+  `};
+  ${mediaQueries(1024)`
     
     height:40%;
   `};
