@@ -27,10 +27,10 @@ border: 1px solid ${props => props.theme.text};
 
 }
 
-${mediaQueries(800)`
-width:16rem;
-margin-right:6rem;
-height:40vh;
+${mediaQueries(1024)`
+width:17rem;
+margin-right:7rem;
+
 
 
 `};
