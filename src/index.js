@@ -3,7 +3,7 @@ import App from './App'
 import "normalize.css"
 import { createRoot } from 'react-dom/client';
 
-import { BrowserRouter, HashRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 
 const container = document.getElementById('root');
